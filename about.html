@@ -188,6 +188,136 @@
     footer a:hover {
       text-decoration: underline;
     }
+
+    /* --- Responsive Adjustments --- */
+
+    /* For Tablets and smaller screens (max-width: 768px) */
+    @media (max-width: 768px) {
+      .header-content-wrapper {
+        padding: 0 15px; /* Reduce horizontal padding */
+      }
+      .header-left img {
+        width: 50px; /* Slightly smaller logo */
+        height: 50px;
+      }
+      header h1 {
+        font-size: 2rem; /* Reduce title font size */
+        letter-spacing: 1px;
+      }
+      .header-nav-buttons {
+        padding: 8px 0; /* Adjust vertical padding */
+        margin-top: 10px; /* Reduce margin */
+        max-width: 100%; /* Allow full width on smaller screens */
+        border-radius: 0; /* Remove bottom border-radius for full width */
+      }
+      .header-nav-buttons a {
+        padding: 6px 15px; /* Adjust button padding */
+        margin: 0 8px; /* Adjust space between buttons */
+        font-size: 0.95rem; /* Reduce button font size */
+      }
+      .container {
+        margin: 30px 15px; /* Adjust margin and add horizontal padding */
+        padding: 25px 20px; /* Adjust padding */
+      }
+      .info, .owner {
+        font-size: 1rem; /* Reduce info font size */
+      }
+      .full-width-section {
+        padding: 30px 15px; /* Adjust section padding */
+        margin-top: 30px; /* Adjust margin */
+      }
+      .full-width-section .section-content {
+        padding: 0 10px; /* Add some inner padding */
+      }
+      .full-width-section h2 {
+        font-size: 1.5rem; /* Reduce heading font size */
+        margin-bottom: 20px;
+      }
+      .full-width-section p {
+        font-size: 1rem; /* Reduce paragraph font size */
+        line-height: 1.6;
+      }
+      .full-width-section .image-gallery {
+        gap: 15px; /* Reduce gap in gallery */
+      }
+      .full-width-section .image-item {
+        min-width: 180px; /* Allow items to be smaller */
+        max-width: 45%; /* Allow two items per row on tablets */
+        padding: 10px;
+      }
+      .full-width-section .image-item img {
+        max-height: 120px; /* Adjust image height */
+      }
+      footer {
+        padding: 15px 0 10px 0;
+        font-size: 0.9rem;
+      }
+    }
+
+    /* For Mobile phones (max-width: 480px) */
+    @media (max-width: 480px) {
+      .header-left {
+        flex-direction: column; /* Stack logo and title vertically */
+        text-align: center;
+        gap: 5px; /* Reduce gap */
+      }
+      .header-left img {
+        width: 45px; /* Smaller logo */
+        height: 45px;
+        margin-top: 0; /* Reset margin */
+      }
+      header h1 {
+        font-size: 1.8rem; /* Further reduce title font size */
+        letter-spacing: 0.5px;
+      }
+      .header-nav-buttons {
+        flex-direction: column; /* Stack navigation buttons vertically */
+        padding: 5px 0;
+      }
+      .header-nav-buttons a {
+        margin: 5px auto; /* Center buttons and add vertical spacing */
+        width: calc(100% - 40px); /* Make buttons almost full width */
+        text-align: center;
+        font-size: 0.9rem;
+      }
+      .container {
+        margin: 20px 10px;
+        padding: 20px 15px;
+      }
+      .info, .owner {
+        font-size: 0.95rem;
+      }
+      .full-width-section {
+        padding: 20px 10px;
+        margin-top: 20px;
+      }
+      .full-width-section h2 {
+        font-size: 1.3rem;
+        margin-bottom: 15px;
+      }
+      .full-width-section p {
+        font-size: 0.9rem;
+      }
+      .full-width-section .image-gallery {
+        flex-direction: column; /* Stack image items vertically */
+        gap: 10px;
+      }
+      .full-width-section .image-item {
+        min-width: unset; /* Remove min-width constraint */
+        max-width: 90%; /* Make image items almost full width */
+        margin: 0 auto; /* Center image items */
+      }
+      .full-width-section .image-item img {
+        max-height: 100px;
+      }
+      .full-width-section .image-item div {
+        font-size: 0.85rem;
+      }
+      footer {
+        padding: 10px 0 8px 0;
+        font-size: 0.8rem;
+      }
+    }
   </style>
 </head>
 <body>
